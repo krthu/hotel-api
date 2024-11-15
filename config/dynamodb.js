@@ -1,7 +1,7 @@
 const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");  // Importera ScanCommand
 
 // Kolla om vi är offline (utvecklingsläge)
-const isOffline = true;
+const isOffline = false;
 
 let dynamoDb;
 

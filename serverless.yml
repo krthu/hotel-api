@@ -1,4 +1,6 @@
 # "org" ensures this Service is used with the correct Serverless Framework Access Key.
+
+
 org: ktpersonal
 # "service" is the name of this project. This will also be added to your AWS resource names.
 service: hotel-api
@@ -8,7 +10,7 @@ provider:
   runtime: nodejs20.x
   region: eu-north-1
   role: ${ssm:/for-class/iam/role}
-
+ 
 package:
   exclude:
     - node_modules/**
@@ -20,8 +22,6 @@ package:
     - "README.md"
     - ".env"
     - .dynamodb/**
-
-
 
 resources:
   Resources:
@@ -64,15 +64,44 @@ plugins:
 
 
 functions:
-  hello:
-    handler: handler.hello
+  modifyBooking:
+    handler: functions/modifyBooking.handler
     events:
-      - httpApi:
-          path: /
-          method: get
-  addItem:
-    handler: addItem.handler
+      - http:
+          path: modify-booking
+          method: PUT
+
+  searchRooms:
+    handler: functions/searchRooms/index.handler
     events:
-      - httpApi:
-          path: /items
-          method: post
+      - http:
+          path: search-rooms
+          method: GET
+          request:
+            parameters:
+              querystrings:
+                guests: true
+                startDate: true
+                endDate: true
+
+  bookRooms:
+    handler: functions/bookRooms/index.handler
+    events:
+      - http:
+          path: book-rooms
+          method: POST
+
+  cancel-booking:
+    handler: functions/cancelBooking/index.handler
+    events:
+      - http:
+          path: cancel-booking/{id}/{date}
+          method: DELETE
+
+  retrive-bookings:
+    handler: functions/retriveBookings/index.handler
+    events:
+      - http:
+          path: retrive-bookings/
+          method: GET
+

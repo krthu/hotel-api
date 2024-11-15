@@ -1,118 +1,226 @@
 [
-    {
-      "PK": "ROOMS",
-      "SK": "2024-11-01",
-      "Rooms": [
-        {"Type": "Single", "Beds": 1, "Price": 1000, "Availability": 7, "Bookings": [] },
-        { "Type": "Double", "Beds": 2, "Price": 1500, "Availability": 10, "Bookings": [] },
-        { "Type": "Suit", "Beds": 2, "Price": 1500, "Availability": 3, "Bookings": [] }
-    
-      ]
-    },
-    {
-      "PK": "ROOMS",
-      "SK": "2024-11-02",
-      "Rooms": [
-        {"Type": "Single", "Beds": 1, "Price": 1000, "Availability": 7, "Bookings": [] },
-        { "Type": "Double", "Beds": 2, "Price": 1500, "Availability": 10, "Bookings": [] },
-        { "Type": "Suit", "Beds": 2, "Price": 1500, "Availability": 3, "Bookings": [] }
-      ]
-    },
-    {
-      "PK": "ROOMS",
-      "SK": "2024-11-03",
-      "Rooms": [
-        {"Type": "Single", "Beds": 1, "Price": 1000, "Availability": 7, "Bookings": [] },
-        { "Type": "Double", "Beds": 2, "Price": 1500, "Availability": 10, "Bookings": [] },
-        { "Type": "Suit", "Beds": 2, "Price": 1500, "Availability": 3, "Bookings": [] }
-      ]
-    },
-    {
-      "PK": "ROOMS",
-      "SK": "2024-11-04",
-      "Rooms": [
-        {"Type": "Single", "Beds": 1, "Price": 1000, "Availability": 7, "Bookings": [] },
-        { "Type": "Double", "Beds": 2, "Price": 1500, "Availability": 10, "Bookings": [] },
-        { "Type": "Suit", "Beds": 2, "Price": 1500, "Availability": 3, "Bookings": [] }
-      ]
-    },
-    {
-      "PK": "ROOMS",
-      "SK": "2024-11-05",
-      "Rooms": [
-        {"Type": "Single", "Beds": 1, "Price": 1000, "Availability": 7, "Bookings": [] },
-        { "Type": "Double", "Beds": 2, "Price": 1500, "Availability": 10, "Bookings": [] },
-        { "Type": "Suit", "Beds": 2, "Price": 1500, "Availability": 3, "Bookings": [] }
-      ]
-    },
-
-    {
-        "PK": "Booking#001",
-        "SK": "2024-11-01",
-        "Name": "John Doe",
-        "Email": "john.doe@example.com",
-        "StartDate": "2024-11-01",
-        "EndDate": "2024-11-03",
-        "BookingID": "001",
-        "NumberOfGuests": 1,
-        "Rooms": [
-        { "Type": "Single", "Price": 1000 }
-        ]
-    },
-    {
-        "PK": "Booking#002",
-        "SK": "2024-11-02",
-        "Name": "Alice Smith",
-        "Email": "alice.smith@example.com",
-        "StartDate": "2024-11-02",
-        "EndDate": "2024-11-04",
-        "BookingID": "002",
-        "NumberOfGuests": 2,
-        "Rooms": [
-        { "Type": "Double", "Price": 1500 }
-        ]
-    },
-    {
-        "PK": "Booking#003",
-        "SK": "2024-11-03",
-        "Name": "Bob Johnson",
-        "Email": "bob.johnson@example.com",
-        "StartDate": "2024-11-03",
-        "EndDate": "2024-11-05",
-        "BookingID": "003",
-        "NumberOfGuests": 1,
-        "Rooms": [
-        { "Type": "Single", "Price": 1000 },
-        { "Type": "Double", "Price": 1500 }
-        ]
-    },
-    {
-        "PK": "Booking#004",
-        "SK": "2024-11-04",
-        "Name": "Clara Lee",
-        "Email": "clara.lee@example.com",
-        "StartDate": "2024-11-04",
-        "EndDate": "2024-11-06",
-        "BookingID": "004",
-        "NumberOfGuests": 3,
-        "Rooms": [
-        { "Type": "Single", "Price": 1000 },
-        { "Type": "Double", "Price": 1500 }
-        ]
-    },
-    {
-        "PK": "Booking#005",
-        "SK": "2024-11-05",
-        "Name": "David Kim",
-        "Email": "david.kim@example.com",
-        "StartDate": "2024-11-05",
-        "EndDate": "2024-11-07",
-        "BookingID": "005",
-        "NumberOfGuests": 2,
-        "Rooms": [
-        { "Type": "Double", "Price": 1500 }
-        ]
-    }
-      
+  {
+    "PK": "ROOMS",
+    "SK": "2024-12-01",
+    "rooms": [
+      {
+        "type": "single",
+        "beds": 1,
+        "price": 500,
+        "availability": 7,
+        "bookings": []
+      },
+      {
+        "type": "double",
+        "beds": 2,
+        "price": 1000,
+        "availability": 3,
+        "bookings": []
+      },
+      {
+        "type": "suit",
+        "beds": 2,
+        "price": 1500,
+        "availability": 3,
+        "bookings": []
+      }
+    ]
+  },
+  {
+    "PK": "ROOMS",
+    "SK": "2024-12-02",
+    "rooms": [
+      {
+        "type": "single",
+        "beds": 1,
+        "price": 500,
+        "availability": 7,
+        "bookings": []
+      },
+      {
+        "type": "double",
+        "beds": 2,
+        "price": 1000,
+        "availability": 3,
+        "bookings": []
+      },
+      {
+        "type": "suit",
+        "beds": 2,
+        "price": 1500,
+        "availability": 3,
+        "bookings": []
+      }
+    ]
+  },
+  {
+    "PK": "ROOMS",
+    "SK": "2024-11-03",
+    "rooms": [
+      {
+        "type": "single",
+        "beds": 1,
+        "price": 500,
+        "availability": 7,
+        "bookings": []
+      },
+      {
+        "type": "double",
+        "beds": 2,
+        "price": 1000,
+        "availability": 10,
+        "bookings": []
+      },
+      {
+        "type": "suit",
+        "beds": 2,
+        "price": 1500,
+        "availability": 3,
+        "bookings": []
+      }
+    ]
+  },
+  {
+    "PK": "ROOMS",
+    "SK": "2024-11-04",
+    "rooms": [
+      {
+        "type": "single",
+        "beds": 1,
+        "price": 500,
+        "availability": 7,
+        "bookings": []
+      },
+      {
+        "type": "double",
+        "beds": 2,
+        "price": 1000,
+        "availability": 10,
+        "bookings": []
+      },
+      {
+        "type": "suit",
+        "beds": 2,
+        "price": 1500,
+        "availability": 3,
+        "bookings": []
+      }
+    ]
+  },
+  {
+    "PK": "ROOMS",
+    "SK": "2024-11-05",
+    "rooms": [
+      {
+        "type": "single",
+        "beds": 1,
+        "price": 500,
+        "availability": 7,
+        "bookings": []
+      },
+      {
+        "type": "double",
+        "beds": 2,
+        "price": 1000,
+        "availability": 10,
+        "bookings": []
+      },
+      {
+        "type": "suit",
+        "beds": 2,
+        "price": 1500,
+        "availability": 3,
+        "bookings": []
+      }
+    ]
+  },
+  {
+    "PK": "Booking#001",
+    "SK": "2024-12-01",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "startDate": "2024-12-01",
+    "endDate": "2024-12-03",
+    "bookingID": "001",
+    "numberOfGuests": 1,
+    "rooms": [
+      {
+        "type": "single",
+        "price": 500,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "PK": "Booking#002",
+    "SK": "2024-12-02",
+    "name": "Alice Smith",
+    "email": "alice.smith@example.com",
+    "startDate": "2024-12-02",
+    "endDate": "2024-12-04",
+    "bookingID": "002",
+    "numberOfGuests": 2,
+    "rooms": [
+      {
+        "type": "double",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "PK": "Booking#003",
+    "SK": "2024-11-03",
+    "name": "Bob Johnson",
+    "email": "bob.johnson@example.com",
+    "startDate": "2024-11-03",
+    "endDate": "2024-11-05",
+    "bookingID": "003",
+    "numberOfGuests": 1,
+    "rooms": [
+      {
+        "type": "single",
+        "price": 500
+      },
+      {
+        "type": "double",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "PK": "Booking#004",
+    "SK": "2024-11-04",
+    "name": "Clara Lee",
+    "email": "clara.lee@example.com",
+    "startDate": "2024-11-04",
+    "endDate": "2024-11-06",
+    "bookingID": "004",
+    "numberOfGuests": 3,
+    "rooms": [
+      {
+        "type": "single",
+        "price": 500
+      },
+      {
+        "type": "double",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "PK": "Booking#005",
+    "SK": "2024-11-05",
+    "name": "David Kim",
+    "email": "david.kim@example.com",
+    "startDate": "2024-11-05",
+    "endDate": "2024-11-07",
+    "bookingID": "005",
+    "numberOfGuests": 2,
+    "rooms": [
+      {
+        "type": "double",
+        "price": 1000
+      }
+    ]
+  }
 ]
-
